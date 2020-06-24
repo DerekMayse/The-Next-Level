@@ -1,0 +1,61 @@
+.mainHeading{
+    text-align: center;
+    border: solid black 3px;
+}
+
+.editProfileBttn{
+    float: right;
+    margin: 1.5px;
+   
+}
+
+.allGamesBttn{
+    float: right;
+    margin: 1.5px;
+}
+
+.logOutBttn{
+    float: right;
+    margin: 1.5px;
+}
+
+.headingDiv{
+float: right;
+margin: 3em;
+
+}
+
+.profileImage{
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid black;
+}
+
+.aboutInfo{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex:2em;
+    margin: 1.5px;
+    border: solid black 3px;
+}
+
+.currentHeading{
+    border: solid black 3px;
+}
+
+.completedSection{
+    border: solid black 3px;
+}
+
+.new-message-form{
+    border: solid black 3px;
+}
+
+.messageSend{
+    border: solid black 3px;  
+}
+
+.bttnSection{
+    border: solid black 3px;   
+}

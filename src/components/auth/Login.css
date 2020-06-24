@@ -1,0 +1,32 @@
+div.login-form{
+    border: 7px ridge rgb(0, 0, 0);
+   
+    background-image: url("https://media1.tenor.com/images/5a934e84f67d2a61a118ec95b1d6cb74/tenor.gif?itemid=11312357");
+}
+
+.login-heading{
+    text-align: center;
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.registerLink{
+align-content: center;
+color: white ;
+font: outline;
+}
+
+.registerLink:hover {
+    color:white;
+    
+ }
+
+.or{
+color: white;
+}
+
+.loginLabel{
+    color: white;
+}
