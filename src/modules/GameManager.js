@@ -2,7 +2,12 @@ const remoteURL = "http://localhost:5002";
 
 export default {
     getAll() {
-        return fetch(`${remoteURL}/games`).then((result) => result.json());
+        return fetch(`${remoteURL}/games?userId=${localStorage.getItem("userId")}&_expand=status&_expand=console
+        `).then((result) => result.json());
+      },
+      getCurrentGames() {
+        return fetch(`${remoteURL}/games?userId=${localStorage.getItem("userId")}&_limit=3
+        `).then((result) => result.json());
       },
       get(id) {
         return fetch(`${remoteURL}/games/${id}`).then((result) => result.json());

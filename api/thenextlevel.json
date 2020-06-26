@@ -2,10 +2,44 @@
   "games": [
     {
       "title": "Sonic the Hegehog",
-      "boxart": "https://lh3.googleusercontent.com/proxy/ZU9vu_stjmSniioyZ2TKkn_g4EFpT3xgAUwAHeSEkz4zHSjBB8LFBCqBGbLYJb7I5_ichxOTYEkNpTwhqT4Rvioo3UJo-38jHg",
+      "boxart": "https://i.kym-cdn.com/photos/images/original/000/243/288/41b.jpg",
       "year": "1991",
       "publisher": "Sega",
       "consoleId": 10,
+      "owned":true,
+      "userId": 1,
+      "statusId": 3,
+      "id": 1
+    },
+    {
+      "title": "The Legend of Zelda: A Link to the Past",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/The_Legend_of_Zelda_A_Link_to_the_Past_SNES_Game_Cover.jpg/220px-The_Legend_of_Zelda_A_Link_to_the_Past_SNES_Game_Cover.jpg",
+      "year": "1991",
+      "publisher": "Nintendo",
+      "consoleId": 9,
+      "owned":true,
+      "userId": 1,
+      "statusId": 3,
+      "id": 1
+    },
+    {
+      "title": "Super Mario World",
+      "boxart": "https://images.nintendolife.com/games/snes/super_mario_world/cover_large.jpg",
+      "year": "2010",
+      "publisher": "Nintendo",
+      "consoleId": 9,
+      "owned":false,
+      "userId": 1,
+      "statusId": 3,
+      "id": 1
+    },
+    {
+      "title": "God of War 3",
+      "boxart": "https://i.ebayimg.com/21/!!d-2!2wB2M~$(KGrHqEOKiUEzPe58HhdBM7ZBSi,UQ~~_58.JPG?set_id=89040003C1",
+      "year": "1991",
+      "publisher": "SIE",
+      "consoleId": 24,
+      "owned":true,
       "userId": 1,
       "statusId": 3,
       "id": 1
@@ -16,6 +50,40 @@
       "year": "2000",
       "publisher": "Ubi Soft",
       "consoleId": 16,
+      "owned":true,
+      "userId": 1,
+      "statusId": 2,
+      "id": 2
+    },
+    {
+      "title": "X-Men 2",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/X-Men_2_Clone_Wars_cover.jpg/220px-X-Men_2_Clone_Wars_cover.jpg",
+      "year": "1995",
+      "publisher": "Activision",
+      "consoleId": 9,
+      "owned":true,
+      "userId": 1,
+      "statusId": 2,
+      "id": 2
+    },
+    {
+      "title": "Crusader of Centy",
+      "boxart": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJ_tgMZAOsBo68VlPeVzPP01LSLq-D4dzQvF4b8BJHJg&usqp=CAU&ec=45675148",
+      "year": "1994",
+      "publisher": "Nex",
+      "consoleId": 9,
+      "owned":true,
+      "userId": 1,
+      "statusId": 2,
+      "id": 2
+    },
+    {
+      "title": "Tony Hawk's Pro Skater 3",
+      "boxart": "https://i.ebayimg.com/images/g/srsAAMXQjwVQ9wAG/s-l640.jpg",
+      "year": "2001",
+      "publisher": "Neversoft",
+      "consoleId": 16,
+      "owned":true,
       "userId": 1,
       "statusId": 2,
       "id": 2
@@ -26,6 +94,7 @@
       "year": "2001",
       "publisher": "Nintendo",
       "consoleId": 21,
+      "owned":false,
       "userId": 1,
       "statusId": 4,
       "id": 3
@@ -36,19 +105,36 @@
       "year": "1995",
       "publisher": "Square Enix",
       "consoleId": 9,
+      "owned":true,
       "userId": 1,
       "statusId": 1,
       "id": 4
+    },
+    {
+      "title": "Donkey Kong Country",
+      "boxart": "https://images.lukiegames.com/t_300e2/assets/images/SNES/snes_donkey_kong_country_p_9vcoxo.jpg",
+      "year": "1994",
+      "publisher": "Rare",
+      "consoleId": 9,
+      "owned":true,
+      "userId": 2,
+      "statusId": 1,
+      "id": 5
     }
   ],
   "users": [
     {
       "id": 1,
-      "aboutme": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "name": "Derek Mayse",
+      "birthdate": "08/23/1897",
+      "username": "Hav3k",
+      "email": "derek@mayse.com",
+      "password": "123",
+      "aboutme":"2",
       "profilepicture": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/92163f5a-fb80-46db-a867-ddfc8c289d2d/d81zmfe-65beb41e-8475-4bf9-b042-c7f1e14c62ec.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTIxNjNmNWEtZmI4MC00NmRiLWE4NjctZGRmYzhjMjg5ZDJkXC9kODF6bWZlLTY1YmViNDFlLTg0NzUtNGJmOS1iMDQyLWM3ZjFlMTRjNjJlYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-hZJaXegaUZ0ZrhTEv_I2AxoRwfPry46uEkQzFa34dQ"
     },
     {
-      "name": "BOB",
+      "name": "BOB Dole",
       "birthdate": "08/23/1897",
       "username": "JsonDoe",
       "email": "bob@bob.com",
@@ -56,21 +142,6 @@
       "aboutme": "text test",
       "profilepicture": " data:image/png;base64,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",
       "id": 2
-    },
-    {
-      "id": 3,
-      "aboutme": "2",
-      "profilepicture": "https://media.istockphoto.com/photos/hands-forming-a-heart-shape-with-sunset-silhouette-picture-id636379014?k=6&m=636379014&s=612x612&w=0&h=tnYrf_O_nvT15N4mmjorIRvZ7lK4w1q1c7RSfrVmqKA="
-    },
-    {
-      "name": "2",
-      "birthdate": "2",
-      "username": "2",
-      "email": "2@2.com",
-      "password": "2",
-      "aboutme": "2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222",
-      "profilepicture": " data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAM1BMVEUKME7///+El6bw8vQZPVlHZHpmfpHCy9Ojsbzg5ekpSmTR2N44V29XcYayvsd2i5yTpLFbvRYnAAAJcklEQVR4nO2d17arOgxFs+kkofz/154Qmg0uKsuQccddT/vhnOCJLclFMo+//4gedzcApf9B4srrusk+GsqPpj+ypq7zVE9LAdLWWVU+Hx69y2FMwAMGyfusLHwIpooyw9IAQfK+8naDp3OGHvZ0FMhrfPMgVnVjC2kABOQ1MLvi0DEIFj1ILu0LU2WjNRgtSF3pKb4qqtd9IHmjGlJHlc09IHlGcrQcPeUjTAySAGNSkQlRhCCJMGaUC0HSYUx6SmxFAtJDTdylsr4ApC1TY0yquKbCBkk7qnYVzPHFBHkBojhVJWviwgPJrsP4qBgTgbQXdsesjm4pDJDmIuswVZDdFx0ENTtkihoeqSDXD6tVxOFFBHndMKxWvUnzexpIcx/Gg2goJJDhVo6PCMGRAnKTmZuKm3wcJO/upphUqUHy29yVrRhJDORXOKIkEZDf4YiRhEF+iSNCEgb5KY4wSRDkB/yurUEG8nMcocgYABnvbrVL3nMIP0h/d5udKnwzSC/InfPdkJ6eWb0PJE++dyVVyQP5iQmWW27X5QG5druEKafBu0Hqu9saVOHa8HKC/K6BzHKZiRMEZCDF0Nd1/ZfXI/fcOibHOssFgokg9uFA20BhztHEAZIjIohrD/o1wljeFBDEwBo8YUt5Ir/rNLjOIACPFdy/AbEcPdcJBOCxytjeYAM4Kzp6rhOIPhRGNzwmFP3rOoTFI0irtnQKx6fj1Zt+h9njEUS9mKJxfFRrX5lt7wcQtaWTOfTHeIXVJQcQrRW+OYex2j0a66XZINoO8a7fPH2iHF2mC7ZBtB3Czb5QvjizSx7A3308mRzqAwujSywQbYfwc0iU8zqjS0yQ6ztEHX9332KCa",
-      "id": 4
     }
   ],
   "notes": [
@@ -87,7 +158,7 @@
       "gamesId": 4
     }
   ],
-  "console": [
+  "consoles": [
     {
       "id": 1,
       "name": "Magnavox Odyssey"
@@ -237,7 +308,7 @@
       "name": "iOS"
     }
   ],
-  "status": [
+  "statuses": [
     {
       "id": 1,
       "info": "Backlog"

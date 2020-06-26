@@ -1,0 +1,13 @@
+div.cardContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1em;
+    
+    
+}
+
+.nowPlaying{
+    color: white;
+    text-align: center;
+}

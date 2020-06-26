@@ -1,6 +1,15 @@
 .mainHeading{
     text-align: center;
-    border: solid black 3px;
+    color: white;
+    margin-left: 1em;
+}
+
+body{
+    background-image: url("https://i.ytimg.com/vi/Qc7VEJjqaGo/maxresdefault.jpg");
+}
+
+.signedInAs{
+    justify-content: left;
 }
 
 .editProfileBttn{
