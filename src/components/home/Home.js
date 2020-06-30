@@ -1,53 +1,62 @@
 import React, { Component } from "react";
 import { Container, Form, Button, Navbar, Nav, Card } from "react-bootstrap";
 import ProfileManager from "../../modules/ProfileManager";
-import GameManager from '../../modules/GameManager'
+import GameManager from "../../modules/GameManager";
 import "./Home.css";
-
+import NowPlayingGameCard from "../nowplaying/NowPlayingGameCard";
+import CompletedGames from "../completed/CompletedGames";
 class Home extends Component {
   //define what this component needs to render
   state = {
     users: [],
-    games:[]
+    nowPlaying: [],
+    completedGames: [],
   };
-  
 
   componentDidMount() {
-    ProfileManager.get(parseInt(localStorage.getItem("userId"))).then(
-      (user) => {
+    ProfileManager.get(parseInt(localStorage.getItem("userId")))
+      .then((user) => {
         console.log(user);
         this.setState({
           users: user,
         });
-      
-      } 
+      })
 
-    )
-   
+      .then(() =>
+        GameManager.getAll().then((game) => {
+          //take the games that come back turn them into arrays of completed game and in progress
 
-   .then(() => GameManager.getAll()
-    .then((games) => { 
-       //take the games that come back turn them into arrays of completed game and in progress
-       const nowPlaying =  games.filter(game => {
-        return game
-    })
-  
+          const nowPlaying = game.filter((games) => {
+            let nowPlayingStatus = false;
 
-    if (this.state.games.statusId === 2){
-      return nowPlaying
-    }
-        
-      this.setState({
-            games: nowPlaying
+            if (games.statusId === 2) {
+              nowPlayingStatus = true;
+            }
+
+            return nowPlayingStatus;
+          });
+
+          const completed = game.filter((games) => {
+            let completedStatus = false;
+
+            if (games.statusId === 3) {
+              completedStatus = true;
+            }
+
+            return completedStatus;
+          });
+
+          this.setState({
+            nowPlaying: nowPlaying.slice(0, 3),
+            completedGames: completed.slice(0, 3),
+          });
         })
-        console.log(nowPlaying)
-    }))
-  
+      );
   }
-  
 
   render() {
-    // console.log(this.state.users);
+    console.log(this.state.nowPlaying, this.state.completedGames);
+
     return (
       <React.Fragment>
         <Navbar bg="dark" variant="dark">
@@ -57,17 +66,16 @@ class Home extends Component {
               <h1 className="mainHeading">
                 Welcome, <em>{localStorage.getItem("username")}</em>
               </h1>
-              <div classname="signedInAs">
-              Signed in as: <a href="#login">{this.state.users.name}</a>
+              <div >
+                Signed in as: <a href="#login"classname="signedInAs" >{this.state.users.name}</a>
               </div>
-             
             </Navbar.Text>
           </Nav>
         </Navbar>
 
         <div className="bttnSection">
           <Button
-            variant="outline-dark"
+            variant="danger"
             type="button"
             className="editProfileBttn"
             onClick={() => {
@@ -77,7 +85,7 @@ class Home extends Component {
             Edit Profile
           </Button>
           <Button
-            variant="outline-dark"
+            variant="danger"
             type="button"
             className="allGamesBttn"
             onClick={() => {
@@ -87,7 +95,7 @@ class Home extends Component {
             View All Games
           </Button>
           <Button
-            variant="outline-dark"
+            variant="danger"
             type="button"
             className="logOutBttn"
             href="/"
@@ -95,47 +103,69 @@ class Home extends Component {
           >
             Log Out
           </Button>
-        </div>
-        <div className="headingDiv">
-          <h2 className="aboutMe">About Me</h2>
-          <div className="aboutInfo">
-            <img
-              className="profileImage"
-              src={this.state.users.profilepicture}
-              alt="profilePic"
-            ></img>
+          <div className="parentContainer">
+          <div className="headingDiv">
+            <div className="aboutCurrent">
+           
+              <Card style={{ width: "18rem" }}>
+                <Card.Title> <h2 >About Me</h2>
+              </Card.Title>
+                <Card.Img variant="top" src={this.state.users.profilepicture} />
+                <Card.Body>
+                  <Card.Text>
+                    <p>{this.state.users.aboutme}</p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              </div>
+            
 
-            <p>{this.state.users.aboutme} </p>
-          </div>
+            <div className="nowPlaying">
+              <Card>
+            <Card.Title><h2 className="currentTitle">Currently Playing</h2></Card.Title>
+            </Card>
+            <div className="nowPLayingCard">
+              {this.state.nowPlaying.map((game) => (
+                <NowPlayingGameCard key={game.id} game={game} />
+              ))}
+            </div>
+            </div>
+           
 
-          <h2 className="currentHeading">Currently Playing</h2>
-          <div>
-     
+            <div className="completed">
+            <h2 className="recentlyCompleted">Recently Completed</h2>
+              <div className="completedCard">
+          {this.state.completedGames.map((game) => (
+            <CompletedGames key={game.id} game={game} />
+          ))}
           </div>
-          <h2 className="completedSection">Recently Completed</h2>
-        </div>
-        <Container className="new-message-form">
-          <Form.Group>
-            <Form.Control
-              size="sm"
-              type="text"
-              className="messageInput"
-              //   onChange={this.handleNewFieldChange}
-              //   value={this.state.message}
-              placeholder="New Message"
-            />
-          </Form.Group>
-        </Container>
-        <div className="messageSend">
-          <Button
-            type="button"
-            variant="outline-dark"
-            size="sm"
-            onClick={() => this.createNewMessage()}
-          >
-            Send
-          </Button>{" "}
-        </div>
+                   </div>
+                   </div>
+          <Container className="container" style={{ width: "18rem" }}>
+            <Form.Group className="new-message-form">
+              <Form.Control
+                size="sm"
+                style={{ width: "18rem" }}  
+                type="text"
+                className="messageInput"
+                variant="light"
+                //   onChange={this.handleNewFieldChange}
+                //   value={this.state.message}
+                placeholder="New Message"
+              />
+              <Button
+                type="button"
+                variant="danger"
+                size="sm"
+                onClick={() => this.createNewMessage()}
+              >
+                Send
+              </Button>{" "}
+            </Form.Group>
+          </Container>
+          <div className="messageSend"></div>
+          </div>
+          </div>
       </React.Fragment>
     );
   }

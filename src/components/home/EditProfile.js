@@ -5,6 +5,11 @@ import { Form, Button } from "react-bootstrap";
 class EditProfile extends Component {
   //setting user information as an empty string and loading status to state
   state = {
+    name:"",
+    birthdate: "",
+    username: "",
+    email:"",
+    password:"",
     aboutme: "",
     profilepicture: "",
     loadingStatus: true,
@@ -24,6 +29,11 @@ class EditProfile extends Component {
     this.setState({ loadingStatus: true });
     const editedUser = {
       id: this.props.match.params.userId,
+      name:this.state.name,
+      birthdate:this.state.birthdate,
+      username:this.state.username,
+      email:this.state.email,
+      password:this.state.password,
       aboutme: this.state.aboutme,
       profilepicture: this.state.profilepicture
     };
@@ -37,6 +47,11 @@ class EditProfile extends Component {
         ProfileManager.get(this.props.match.params.userId)
         .then(user => {
             this.setState({
+              name: user.name,
+              birthdate: user.birthdate,
+              username: user.username,
+              email: user.email,
+              password: user.password,
               aboutme: user.aboutme,
               profilepicture: user.profilepicture,
               loadingStatus: false,
@@ -49,6 +64,67 @@ class EditProfile extends Component {
       <>
         <h1>EditProfile</h1>
         <Form>
+          
+        <Form.Group >
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              as="textarea"
+              value={this.state.name}
+              maxlength = "100"
+              type="text"
+              placeholder="Name"
+              onChange={this.handleFieldChange}
+              id="aboutme"
+            />
+          </Form.Group>
+          <Form.Group >
+            <Form.Label>Birthdate</Form.Label>
+            <Form.Control
+              as="textarea"
+              value={this.state.birthdate}
+              maxlength = "100"
+              type="text"
+              placeholder="Name"
+              onChange={this.handleFieldChange}
+              id="aboutme"
+            />
+          </Form.Group>
+          <Form.Group >
+            <Form.Label>UserName</Form.Label>
+            <Form.Control
+              as="textarea"
+              value={this.state.username}
+              maxlength = "100"
+              type="text"
+              placeholder="Name"
+              onChange={this.handleFieldChange}
+              id="aboutme"
+            />
+          </Form.Group>
+          <Form.Group >
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              as="textarea"
+              value={this.state.email}
+              maxlength = "100"
+              type="text"
+              placeholder="Name"
+              onChange={this.handleFieldChange}
+              id="aboutme"
+            />
+          </Form.Group>
+          <Form.Group >
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              as="textarea"
+              value={this.state.password}
+              maxlength = "100"
+              type="password"
+              placeholder="Name"
+              onChange={this.handleFieldChange}
+              id="aboutme"
+            />
+          </Form.Group>
 
           <Form.Group >
             <Form.Label>About Me</Form.Label>

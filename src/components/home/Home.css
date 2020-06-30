@@ -1,3 +1,8 @@
+.parentContainer{
+display: flex;
+}
+
+
 .mainHeading{
     text-align: center;
     color: white;
@@ -5,7 +10,7 @@
 }
 
 body{
-    background-image: url("https://i.ytimg.com/vi/Qc7VEJjqaGo/maxresdefault.jpg");
+    background-image: url("https://www.xmple.com/wallpaper/white-black-graph-paper-grid-512x512-c2-ffffff-000000-l2-3-51-a-0-f-20.svg");
 }
 
 .signedInAs{
@@ -16,6 +21,15 @@ body{
     float: right;
     margin: 1.5px;
    
+}
+
+.recentlyCompleted{
+    text-align: left;
+}
+
+.completed{
+    display: flex;
+    flex-direction: row;
 }
 
 .allGamesBttn{
@@ -29,42 +43,85 @@ body{
 }
 
 .headingDiv{
-float: right;
+justify-content: space-evenly ;
+
 margin: 3em;
 
+}
+.completedCard{
+    display: flex;
+    flex-direction: row;
+    
+}
+.profileCard{
+    border: 3px solid black;
 }
 
 .profileImage{
     width: 20vw;
     height: 20vh;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
-.aboutInfo{
-    float: right;
+.currentTitle{
+    color: black;
+}
+
+.nowPLayingCard{
     display: flex;
     flex-direction: row;
-    flex:2em;
-    margin: 1.5px;
-    border: solid black 3px;
+    border: 1px solid black;
+    
 }
+
+.currentTitle{
+    text-align: left;
+    margin: 0%;
+}
+
+/* .aboutInfo{
+    float: right;
+    display: flex;
+     position: relative; right: 300px;
+    flex:3em;
+    margin: 1.5px;
+    border:  solid black 3px;
+   
+} */
 
 .currentHeading{
-    border: solid black 3px;
+   
+    color: black;
 }
 
-.completedSection{
-    border: solid black 3px;
-}
+/* .completedSection{
+    position: relative; right: 300px;
+    color: black;
+} */
 
 .new-message-form{
     border: solid black 3px;
+    position: relative; left: 200px;
+    margin: 3em;
+    height:3em ;
 }
+ 
+/* .messageInput{
+    
+} */
 
-.messageSend{
+/* .messageSend{
     border: solid black 3px;  
-}
+    position: relative; left: 900px;bottom: 40px ;
+    height: 10px;
+} */
+/* 
+.currentlyCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10%;
+    height: 25vh;
+    width: 75vw;
+} */
 
-.bttnSection{
-    border: solid black 3px;   
-}

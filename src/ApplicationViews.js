@@ -8,6 +8,7 @@ import NowPlayingGameList from "./components/nowplaying/NowPlayingGameList";
 import CompletedGamesList from "./components/completed/CompletedGamesList";
 import BacklogGamesList from "./components/backlog/BacklogGameList";
 import WishListList from "./components/wishlist/WishListList";
+import GameDetails from "./components/gamdetails/GameDetails"
 
 // import Login from ".//auth/Login";
 
@@ -84,6 +85,19 @@ class ApplicationViews extends Component {
             } else {
               return <Redirect to="/login" />;
             }
+          }}
+        />
+             <Route
+          exact
+          path="/games/:gameId(\d+)"
+          render={(props) => {
+            // Pass the animalId to the AnimalDetailComponent
+            return (
+              <GameDetails
+                gameId={parseInt(props.match.params.gameId)}
+                {...props}
+              />
+            );
           }}
         />
       </React.Fragment>

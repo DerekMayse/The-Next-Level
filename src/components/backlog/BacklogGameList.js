@@ -35,7 +35,7 @@ console.log( this.state.games)
     <React.Fragment>
      <NavBar />
     
-     <Button>Add Game</Button>
+     <Button variant="danger">Add Game</Button>
      <h1 className="backlog">Backlog</h1>
 
      <div className="cardContainer">

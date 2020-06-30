@@ -12,11 +12,11 @@ class NowPlayingGames extends Component {
 
 
   render() {
-    //   console.log(this.props.game.title)
+      console.log(this.props.game)
     return (
-        
+      
       <React.Fragment>
-         {this.props.game.statusId === 2 ? (<Card style={{ width: "18rem" }} classname="gameCard" >
+         {this.props.game.statusId === 2 ? (<Card  className="gameCard" style={{ width: "18rem" }}  >
           <Card.Title>{this.props.game.title}</Card.Title>
           <Card.Img variant="top" src={this.props.game.boxart} />
           <Card.Body>

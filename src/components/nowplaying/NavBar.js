@@ -15,6 +15,7 @@ class NavBar extends Component {
   <Nav.Link href="/games/completed">Completed</Nav.Link>
   <Nav.Link href="/games/backlog">Backlog</Nav.Link>
   <Nav.Link href="/games/wishlist">Wishlist</Nav.Link>
+  
 </Nav>
 
 </Navbar>

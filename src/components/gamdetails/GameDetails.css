@@ -1,0 +1,9 @@
+.gameDetails{
+  display: flex;
+}
+
+.gameNotes{
+  display: flex;
+ justify-content: right;
+ margin: 3em;
+}

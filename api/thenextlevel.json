@@ -6,7 +6,7 @@
       "year": "1991",
       "publisher": "Sega",
       "consoleId": 10,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 3,
       "id": 1
@@ -17,10 +17,10 @@
       "year": "1991",
       "publisher": "Nintendo",
       "consoleId": 9,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 3,
-      "id": 1
+      "id": 2
     },
     {
       "title": "Super Mario World",
@@ -28,10 +28,10 @@
       "year": "2010",
       "publisher": "Nintendo",
       "consoleId": 9,
-      "owned":false,
+      "owned": false,
       "userId": 1,
       "statusId": 3,
-      "id": 1
+      "id": 3
     },
     {
       "title": "God of War 3",
@@ -39,10 +39,10 @@
       "year": "1991",
       "publisher": "SIE",
       "consoleId": 24,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 3,
-      "id": 1
+      "id": 4
     },
     {
       "title": "Rayman 2 The Great Escape",
@@ -50,10 +50,10 @@
       "year": "2000",
       "publisher": "Ubi Soft",
       "consoleId": 16,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 2,
-      "id": 2
+      "id": 5
     },
     {
       "title": "X-Men 2",
@@ -61,10 +61,10 @@
       "year": "1995",
       "publisher": "Activision",
       "consoleId": 9,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 2,
-      "id": 2
+      "id": 6
     },
     {
       "title": "Crusader of Centy",
@@ -72,10 +72,10 @@
       "year": "1994",
       "publisher": "Nex",
       "consoleId": 9,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 2,
-      "id": 2
+      "id": 7
     },
     {
       "title": "Tony Hawk's Pro Skater 3",
@@ -83,10 +83,10 @@
       "year": "2001",
       "publisher": "Neversoft",
       "consoleId": 16,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 2,
-      "id": 2
+      "id": 8
     },
     {
       "title": "Super Smash Bros Melee",
@@ -94,10 +94,10 @@
       "year": "2001",
       "publisher": "Nintendo",
       "consoleId": 21,
-      "owned":false,
+      "owned": false,
       "userId": 1,
       "statusId": 4,
-      "id": 3
+      "id": 9
     },
     {
       "title": "Chrono Trigger",
@@ -105,10 +105,10 @@
       "year": "1995",
       "publisher": "Square Enix",
       "consoleId": 9,
-      "owned":true,
+      "owned": true,
       "userId": 1,
       "statusId": 1,
-      "id": 4
+      "id": 10
     },
     {
       "title": "Donkey Kong Country",
@@ -116,10 +116,10 @@
       "year": "1994",
       "publisher": "Rare",
       "consoleId": 9,
-      "owned":true,
+      "owned": true,
       "userId": 2,
       "statusId": 1,
-      "id": 5
+      "id": 11
     }
   ],
   "users": [
@@ -130,7 +130,7 @@
       "username": "Hav3k",
       "email": "derek@mayse.com",
       "password": "123",
-      "aboutme":"2",
+      "aboutme": "This is a test. I sure hope this works. ",
       "profilepicture": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/92163f5a-fb80-46db-a867-ddfc8c289d2d/d81zmfe-65beb41e-8475-4bf9-b042-c7f1e14c62ec.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTIxNjNmNWEtZmI4MC00NmRiLWE4NjctZGRmYzhjMjg5ZDJkXC9kODF6bWZlLTY1YmViNDFlLTg0NzUtNGJmOS1iMDQyLWM3ZjFlMTRjNjJlYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-hZJaXegaUZ0ZrhTEv_I2AxoRwfPry46uEkQzFa34dQ"
     },
     {
@@ -149,13 +149,13 @@
       "timestamp": "",
       "text": "Level Select: On the title screen press up, down, left, right. If done correctly you should hear a ring sound. Then hold down the A button and press start",
       "id": 1,
-      "gamesId": 1
+      "gameId": 1
     },
     {
       "timestamp": "",
       "text": "Left off right after the Millineum Fair",
       "id": 2,
-      "gamesId": 4
+      "gameId": 4
     }
   ],
   "consoles": [
