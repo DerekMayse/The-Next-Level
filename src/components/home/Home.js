@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Form, Button, Navbar, Nav, Card } from "react-bootstrap";
+import { Container, Form, Button, Navbar, Nav, Card, Badge } from "react-bootstrap";
 import ProfileManager from "../../modules/ProfileManager";
 import GameManager from "../../modules/GameManager";
 import "./Home.css";
@@ -121,9 +121,9 @@ class Home extends Component {
             
 
             <div className="nowPlaying">
-              <Card>
-            <Card.Title><h2 className="currentTitle">Currently Playing</h2></Card.Title>
-            </Card>
+              
+            <h2 className="currentTitle">Currently Playing</h2>
+            
             <div className="nowPLayingCard">
               {this.state.nowPlaying.map((game) => (
                 <NowPlayingGameCard key={game.id} game={game} />
@@ -141,29 +141,7 @@ class Home extends Component {
           </div>
                    </div>
                    </div>
-          <Container className="container" style={{ width: "18rem" }}>
-            <Form.Group className="new-message-form">
-              <Form.Control
-                size="sm"
-                style={{ width: "18rem" }}  
-                type="text"
-                className="messageInput"
-                variant="light"
-                //   onChange={this.handleNewFieldChange}
-                //   value={this.state.message}
-                placeholder="New Message"
-              />
-              <Button
-                type="button"
-                variant="danger"
-                size="sm"
-                onClick={() => this.createNewMessage()}
-              >
-                Send
-              </Button>{" "}
-            </Form.Group>
-          </Container>
-          <div className="messageSend"></div>
+         
           </div>
           </div>
       </React.Fragment>

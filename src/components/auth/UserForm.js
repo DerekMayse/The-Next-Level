@@ -156,7 +156,7 @@ class UserForm extends Component {
           </Form.Group>
 
           <Button
-            variant="outline-dark"
+            variant="danger"
             type="button"
             disabled={this.state.loadingStatus}
             onClick={this.constructNewUser}>

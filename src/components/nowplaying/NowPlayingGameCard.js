@@ -21,7 +21,7 @@ class NowPlayingGames extends Component {
           <Card.Img variant="top" src={this.props.game.boxart} />
           <Card.Body>
             <Link to={`/games/${this.props.game.id}`}>
-              <Button variant="outline-dark">Details</Button>
+              <Button variant="danger">Details</Button>
             </Link>
           </Card.Body>
         </Card>) : ""}

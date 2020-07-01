@@ -8,7 +8,10 @@ import NowPlayingGameList from "./components/nowplaying/NowPlayingGameList";
 import CompletedGamesList from "./components/completed/CompletedGamesList";
 import BacklogGamesList from "./components/backlog/BacklogGameList";
 import WishListList from "./components/wishlist/WishListList";
-import GameDetails from "./components/gamdetails/GameDetails"
+import GameDetails from "./components/gamdetails/GameDetails";
+import NewNoteForm from "./components/gamdetails/NewNoteForm";
+import EditNotesForm from "./components/gamdetails/EditNotesForm";
+import NewGameForm from "./components/gamdetails/NewGameForm";
 
 // import Login from ".//auth/Login";
 
@@ -76,7 +79,7 @@ class ApplicationViews extends Component {
             }
           }}
         />
-          <Route
+        <Route
           exact
           path="/games/wishlist"
           render={(props) => {
@@ -87,7 +90,7 @@ class ApplicationViews extends Component {
             }
           }}
         />
-             <Route
+        <Route
           exact
           path="/games/:gameId(\d+)"
           render={(props) => {
@@ -98,6 +101,25 @@ class ApplicationViews extends Component {
                 {...props}
               />
             );
+          }}
+        />
+        <Route
+          path="/notes/new/:gameId(\d+)"
+          render={(props) => {
+            return <NewNoteForm {...props} />;
+          }}
+        />
+
+        <Route
+          path="/notes/:noteId(\d+)/edit"
+          render={(props) => {
+            return <EditNotesForm {...props} />;
+          }}
+        />
+        <Route
+          path="/games/new"
+          render={(props) => {
+            return <NewGameForm {...props} />;
           }}
         />
       </React.Fragment>

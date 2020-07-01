@@ -10,7 +10,10 @@ export default {
         `).then((result) => result.json());
       },
       get(id) {
-        return fetch(`${remoteURL}/games/${id}`).then((result) => result.json());
+        return fetch(`${remoteURL}/games/${id}?_expand=console&_embed=notes`).then((result) => result.json());
+      },
+      getNotes(id) {
+        return fetch(`${remoteURL}/games/${id}?_embed=notes`).then((result) => result.json());
       },
       post(newGame) {
         return fetch(`${remoteURL}/games`, {

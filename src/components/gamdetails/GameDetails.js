@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import GameManager from "../../modules/GameManager";
 import { Button, Card, ListGroup, ListGroupItem } from "react-bootstrap";
-import NavBar from "../nowplaying/NavBar"
-import './GameDetails.css'
-import GameNotes from "../gamdetails/GameNotes"
-
+import NavBar from "../nowplaying/NavBar";
+import "./GameDetails.css";
+import GameNotes from "../gamdetails/GameNotes";
 
 class GameDetails extends Component {
   state = {
@@ -12,29 +11,28 @@ class GameDetails extends Component {
     boxart: "",
     year: "",
     publisher: "",
-    consoleId: null,
+    console: "",
     owned: null,
     userId: null,
     statusId: null,
+    
     loadingStatus: true,
   };
 
   componentDidMount() {
-
     GameManager.get(this.props.gameId).then((game) => {
       this.setState({
         title: game.title,
         boxart: game.boxart,
         year: game.year,
         publisher: game.publisher,
-        consoleId: game.consoleId,
+        console: game.console,
         owned: game.owned,
         userId: game.userId,
         statusId: game.statusId,
         loadingStatus: false,
       });
     });
-   
   }
 
   handleDelete = () => {
@@ -46,54 +44,64 @@ class GameDetails extends Component {
   };
 
   render() {
-      
+   
     return (
       <React.Fragment>
-           <NavBar />
-          <div className="gameDetails">
-
-          
-        <Card style={{ width: "18rem" }}>
-        <Card.Title>{this.state.title}</Card.Title>
-          <Card.Img variant="top" src={this.state.boxart} />
-          <Card.Body>
-            {/* <Card.Text>
+        <NavBar />
+        <div className="gameDetails">
+          <Card style={{ width: "18rem" }}>
+            <Card.Title>{this.state.title}</Card.Title>
+            <Card.Img variant="top" src={this.state.boxart} />
+            <Card.Body>
+              {/* <Card.Text>
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text> */}
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-        <ListGroupItem><h6>Realeased:</h6>{this.state.year}</ListGroupItem>
-            <ListGroupItem><h6>Published By:</h6>{this.state.publisher} </ListGroupItem>
-        <ListGroupItem><h6>Console:{this.state.consoleId}</h6></ListGroupItem>
-        <ListGroupItem><h6>Owned:{this.state.owned}</h6></ListGroupItem>
-        
-          </ListGroup>
-          <Card.Body>
-          <Button
-          variant="danger"
-          type="button"
-          disabled={this.state.loadingStatus}
-          onClick={this.handleDelete}
-        >
-          Delete
-        </Button>
-        <Button
-          variant="danger"
-          type="button"
-          onClick={() => {
-            this.props.history.push(`/games/${this.props.gameId}/edit`);
-          }}
-        >
-          Edit
-        </Button>
-          </Card.Body>
-        </Card>
-       <div className="gameNotes">
-
-       
-        <GameNotes />
-        </div>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+              <ListGroupItem>
+                <h6>Realeased:</h6>
+                {this.state.year}
+              </ListGroupItem>
+              <ListGroupItem>
+                <h6>Published By:</h6>
+                {this.state.publisher}{" "}
+              </ListGroupItem>
+              <ListGroupItem>
+                <h6>Console:</h6>
+                {this.state.console.name}
+              </ListGroupItem>
+              {this.state.owned === true ? (
+                <ListGroupItem>
+                  <h6>Owned</h6>
+                </ListGroupItem>
+              ) : (
+                ""
+              )}
+            </ListGroup>
+            <Card.Body>
+              <Button
+                variant="danger"
+                type="button"
+                disabled={this.state.loadingStatus}
+                onClick={this.handleDelete}
+              >
+                Delete
+              </Button>
+              <Button
+                variant="danger"
+                type="button"
+                onClick={() => {
+                  this.props.history.push(`/games/${this.props.gameId}/edit`);
+                }}
+              >
+                Edit
+              </Button>
+            </Card.Body>
+          </Card>
+          <div className="gameNotes">
+            <GameNotes {...this.props} />
+          </div>
         </div>
       </React.Fragment>
     );

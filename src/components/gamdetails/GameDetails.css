@@ -7,3 +7,8 @@
  justify-content: right;
  margin: 3em;
 }
+
+.notesSection{
+display: flex;
+flex-direction: column;
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import GameManager from '../../modules/GameManager'
 import BacklogGames from "./BacklogGames"
 import NavBar from "../nowplaying/NavBar"
-// import './NowPlayingGameList.css'
+import './BacklogGamesList.css'
 import { Button } from "react-bootstrap";
 
 
@@ -35,7 +35,9 @@ console.log( this.state.games)
     <React.Fragment>
      <NavBar />
     
-     <Button variant="danger">Add Game</Button>
+     <Button variant="danger" onClick={() => {
+            this.props.history.push(`/games/new`);
+          }} >Add Game</Button>
      <h1 className="backlog">Backlog</h1>
 
      <div className="cardContainer">

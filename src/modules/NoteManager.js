@@ -2,8 +2,9 @@ const remoteURL = "http://localhost:5002";
 
 export default {
     getAll() {
-        return fetch(`${remoteURL}/notes`).then((result) => result.json());
+        return fetch(`${remoteURL}/notes?_expand=game`).then((result) => result.json());
       },
+      
       get(id) {
         return fetch(`${remoteURL}/notes/${id}`).then((result) => result.json());
       },

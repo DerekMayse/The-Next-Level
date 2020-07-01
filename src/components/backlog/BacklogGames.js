@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button, Card,  } from "react-bootstrap";
-// import GameManager from "../../modules/GameManager"
+
 
 
 class BacklogGames extends Component {
@@ -21,7 +21,7 @@ class BacklogGames extends Component {
           <Card.Img variant="top" src={this.props.game.boxart} />
           <Card.Body>
             <Link to={`/games/${this.props.game.id}`}>
-              <Button variant="outline-dark">Details</Button>
+              <Button variant="danger">Details</Button>
             </Link>
           </Card.Body>
         </Card>) : ""}

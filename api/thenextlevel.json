@@ -109,17 +109,6 @@
       "userId": 1,
       "statusId": 1,
       "id": 10
-    },
-    {
-      "title": "Donkey Kong Country",
-      "boxart": "https://images.lukiegames.com/t_300e2/assets/images/SNES/snes_donkey_kong_country_p_9vcoxo.jpg",
-      "year": "1994",
-      "publisher": "Rare",
-      "consoleId": 9,
-      "owned": true,
-      "userId": 2,
-      "statusId": 1,
-      "id": 11
     }
   ],
   "users": [
@@ -146,16 +135,10 @@
   ],
   "notes": [
     {
-      "timestamp": "",
-      "text": "Level Select: On the title screen press up, down, left, right. If done correctly you should hear a ring sound. Then hold down the A button and press start",
-      "id": 1,
-      "gameId": 1
-    },
-    {
-      "timestamp": "",
-      "text": "Left off right after the Millineum Fair",
-      "id": 2,
-      "gameId": 4
+      "timestamp": "6/1/2020 15:6",
+      "text": "Level Select: On the title screen press UP, DOWN, LEFT, RIGHT. If done correctly you will hear a ring sound then hold down the A button and press START.",
+      "gameId": 1,
+      "id": 1
     }
   ],
   "consoles": [

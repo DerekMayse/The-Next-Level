@@ -35,7 +35,9 @@ console.log( this.state.games)
   return(
     <React.Fragment>
      <NavBar />
-     <Button variant="danger">Add Game</Button>
+     <Button variant="danger"onClick={() => {
+            this.props.history.push(`/games/new`);
+          }} >Add Game</Button>
      <h1 className="completedHeading">Completed</h1>
 
      <div className="cardContainer">
