@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import NoteManager from "../../modules/NoteManager"
 import { Form, Button } from 'react-bootstrap'
+import NavBar from "../nowplaying/NavBar"
 
 
 class EditNotesForm extends Component {
@@ -54,6 +55,7 @@ class EditNotesForm extends Component {
     render() {
             return (
 <>
+<NavBar />
 <h1>Edit Note</h1>
 <Form>
   <Form.Group controlId="formBasicEmail">
@@ -67,7 +69,7 @@ class EditNotesForm extends Component {
   
 
 
-  <Button variant="primary" type="submit"disabled={this.state.loadingStatus}
+  <Button variant="danger" type="submit"disabled={this.state.loadingStatus}
                 onClick={this.update} >
     Save
   </Button>

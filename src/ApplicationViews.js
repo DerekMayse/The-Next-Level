@@ -12,7 +12,7 @@ import GameDetails from "./components/gamdetails/GameDetails";
 import NewNoteForm from "./components/gamdetails/NewNoteForm";
 import EditNotesForm from "./components/gamdetails/EditNotesForm";
 import NewGameForm from "./components/gamdetails/NewGameForm";
-
+import EditGameForm from "./components/gamdetails/EditGameForm"
 // import Login from ".//auth/Login";
 
 class ApplicationViews extends Component {
@@ -120,6 +120,12 @@ class ApplicationViews extends Component {
           path="/games/new"
           render={(props) => {
             return <NewGameForm {...props} />;
+          }}
+        />
+           <Route
+          path="/games/:gameId(\d+)/edit"
+          render={(props) => {
+            return <EditGameForm {...props} />;
           }}
         />
       </React.Fragment>

@@ -1,10 +1,20 @@
 import React, { Component } from "react";
-import { Container, Form, Button, Navbar, Nav, Card, Badge } from "react-bootstrap";
+import {
+  Container,
+  Form,
+  Button,
+  Navbar,
+  Nav,
+  Card,
+  Badge,
+} from "react-bootstrap";
 import ProfileManager from "../../modules/ProfileManager";
 import GameManager from "../../modules/GameManager";
 import "./Home.css";
 import NowPlayingGameCard from "../nowplaying/NowPlayingGameCard";
 import CompletedGames from "../completed/CompletedGames";
+import MessagePage from "./MessagePage";
+
 class Home extends Component {
   //define what this component needs to render
   state = {
@@ -66,8 +76,11 @@ class Home extends Component {
               <h1 className="mainHeading">
                 Welcome, <em>{localStorage.getItem("username")}</em>
               </h1>
-              <div >
-                Signed in as: <a href="#login"classname="signedInAs" >{this.state.users.name}</a>
+              <div>
+                Signed in as:{" "}
+                <a href="#login" classname="signedInAs">
+                  {this.state.users.name}
+                </a>
               </div>
             </Navbar.Text>
           </Nav>
@@ -104,46 +117,53 @@ class Home extends Component {
             Log Out
           </Button>
           <div className="parentContainer">
-          <div className="headingDiv">
-            <div className="aboutCurrent">
-           
-              <Card style={{ width: "18rem" }}>
-                <Card.Title> <h2 >About Me</h2>
-              </Card.Title>
-                <Card.Img variant="top" src={this.state.users.profilepicture} />
-                <Card.Body>
-                  <Card.Text>
-                    <p>{this.state.users.aboutme}</p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+            <div className="headingDiv">
+              <div className="aboutCurrent">
+                <div className="aboutStuff">
+                <Card style={{ width: "18rem" }}>
+                  <Card.Title>
+                    {" "}
+                    <h2>About Me</h2>
+                  </Card.Title>
+                  <Card.Img
+                    variant="top"
+                    src={this.state.users.profilepicture}
+                  />
+                  <Card.Body>
+                    <Card.Text>
+                      <p>{this.state.users.aboutme}</p>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                </div>
+                <div className="messages">
+            <MessagePage />
+          </div>
               </div>
-            
 
-            <div className="nowPlaying">
-              
-            <h2 className="currentTitle">Currently Playing</h2>
-            
-            <div className="nowPLayingCard">
-              {this.state.nowPlaying.map((game) => (
-                <NowPlayingGameCard key={game.id} game={game} />
-              ))}
-            </div>
-            </div>
-           
+              <div className="nowPlaying">
+                <h2 className="currentTitle">Currently Playing</h2>
 
-            <div className="completed">
-            <h2 className="recentlyCompleted">Recently Completed</h2>
-              <div className="completedCard">
-          {this.state.completedGames.map((game) => (
-            <CompletedGames key={game.id} game={game} />
-          ))}
+                <div className="nowPLayingCard">
+                  {this.state.nowPlaying.map((game) => (
+                    <NowPlayingGameCard key={game.id} game={game} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="nowPlaying">
+                <h2 className="currentTitle">Recently Completed</h2>
+
+                <div className="nowPLayingCard">
+                  {this.state.completedGames.map((game) => (
+                    <CompletedGames key={game.id} game={game} />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-                   </div>
-                   </div>
-         
-          </div>
-          </div>
+        
+        </div>
       </React.Fragment>
     );
   }

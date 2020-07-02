@@ -38,5 +38,15 @@ export default {
           },
           body: JSON.stringify(editedGame)
         }).then(data => data.json());
-      }
+      },
+      patch(id){
+        return fetch(`${remoteURL}/game/${id}`, {
+            method: 'PATCH',
+            body: JSON.stringify({isCompleted: true}),
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+        .then(result => result.json())
+    },
     }

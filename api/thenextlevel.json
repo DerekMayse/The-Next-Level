@@ -109,6 +109,28 @@
       "userId": 1,
       "statusId": 1,
       "id": 10
+    },
+    {
+      "title": "Sonic Mania Plus",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/d/d2/Sonic_Mania_%28artwork%29.jpg",
+      "year": "2017",
+      "publisher": "Sega",
+      "consoleId": 32,
+      "owned": true,
+      "statusId": 3,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "title": "Super Mario 64",
+      "boxart": "https://i.etsystatic.com/11811092/r/il/d7cec9/1542490195/il_794xN.1542490195_p0k8.jpg",
+      "year": "1996",
+      "publisher": "Nintendo",
+      "consoleId": 17,
+      "owned": false,
+      "statusId": 1,
+      "userId": 1,
+      "id": 12
     }
   ],
   "users": [
@@ -139,6 +161,12 @@
       "text": "Level Select: On the title screen press UP, DOWN, LEFT, RIGHT. If done correctly you will hear a ring sound then hold down the A button and press START.",
       "gameId": 1,
       "id": 1
+    },
+    {
+      "id": 2,
+      "timestamp": "6/2/2020 10:2",
+      "text": "Can't Figure out what to do with the ball you can carry in the pit of Dispair",
+      "gameId": 5
     }
   ],
   "consoles": [
@@ -311,10 +339,19 @@
   ],
   "messages": [
     {
-      "timestamp": "",
-      "messagetext": "Welcome to the next level",
       "id": 1,
-      "usersId": 1
+      "message": "Welcome ",
+      "time": "10:33:55 AM"
+    },
+    {
+      "message": "Let's Make a new Message",
+      "time": "8:54:59 AM",
+      "id": 2
+    },
+    {
+      "message": "message",
+      "time": "10:46:32 AM",
+      "id": 4
     }
   ]
 }

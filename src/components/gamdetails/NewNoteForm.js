@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import NoteManager from "../../modules/NoteManager";
 import { Form, Button } from 'react-bootstrap'
+import NavBar from "../nowplaying/NavBar"
 
 // change route to note/new/gameId
-
+//get all consoles  map through op
 class NewNoteForm extends Component {
   state = {
     
@@ -45,6 +46,7 @@ class NewNoteForm extends Component {
 
 
 <>
+<NavBar />
 <h1>Add Note</h1>
 <Form>
   <Form.Group controlId="formBasicEmail">
@@ -59,6 +61,7 @@ class NewNoteForm extends Component {
 
 
   <Button   type="button"
+  variant="danger"
                 disabled={this.state.loadingStatus}
                 onClick={this.constructNewNote}>
     Save

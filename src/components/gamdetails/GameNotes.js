@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GameManager from "../../modules/GameManager";
 import NoteManager from "../../modules/NoteManager";
-import { Button, Card } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./GameDetails.css";
 import GameNotesCard from "./GameNotesCard";
 
