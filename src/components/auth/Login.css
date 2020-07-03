@@ -31,3 +31,10 @@ color: white;
 .loginLabel{
     color: white;
 }
+
+.reg{
+    background-color: rgba(141, 138, 138, 0.87);
+    }
+    .regHeading{
+        text-align: center;
+    }

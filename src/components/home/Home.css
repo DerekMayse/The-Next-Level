@@ -48,6 +48,11 @@ justify-content: space-evenly ;
 margin: 3em;
 
 }
+.messages{
+    padding: 10em;
+    width:55em;
+}
+
 .completedCard{
     display: flex;
     flex-direction: row;
@@ -74,8 +79,17 @@ margin: 3em;
     
 }
 
+.editProfile{
+background-color: rgba(141, 138, 138, 0.87);
+}
+.editProfileHeading{
+    text-align: center;
+}
+
+
+
 .aboutCurrent{
-display: flex;
+ display: flex;
 }
 
 .currentTitle{

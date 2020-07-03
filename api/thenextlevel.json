@@ -23,15 +23,15 @@
       "id": 2
     },
     {
+      "id": 3,
       "title": "Super Mario World",
       "boxart": "https://images.nintendolife.com/games/snes/super_mario_world/cover_large.jpg",
-      "year": "2010",
+      "year": "1991",
       "publisher": "Nintendo",
       "consoleId": 9,
-      "owned": false,
+      "owned": true,
       "userId": 1,
-      "statusId": 3,
-      "id": 3
+      "statusId": 3
     },
     {
       "title": "God of War 3",
@@ -56,6 +56,7 @@
       "id": 5
     },
     {
+      "id": 6,
       "title": "X-Men 2",
       "boxart": "https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/X-Men_2_Clone_Wars_cover.jpg/220px-X-Men_2_Clone_Wars_cover.jpg",
       "year": "1995",
@@ -63,8 +64,7 @@
       "consoleId": 9,
       "owned": true,
       "userId": 1,
-      "statusId": 2,
-      "id": 6
+      "statusId": 2
     },
     {
       "title": "Crusader of Centy",
@@ -111,6 +111,116 @@
       "id": 10
     },
     {
+      "id": 12,
+      "title": "Super Mario 64",
+      "boxart": "https://i.etsystatic.com/11811092/r/il/d7cec9/1542490195/il_794xN.1542490195_p0k8.jpg",
+      "year": "1996",
+      "publisher": "Nintendo",
+      "consoleId": 17,
+      "owned": false,
+      "userId": 1,
+      "statusId": 1
+    },
+    {
+      "title": "Sonic Mania Plus",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/d/d2/Sonic_Mania_%28artwork%29.jpg",
+      "year": "2017",
+      "publisher": "Sega",
+      "consoleId": 32,
+      "owned": true,
+      "statusId": 2,
+      "userId": 2,
+      "id": 14
+    },
+    {
+      "title": "Super Mario 64",
+      "boxart": "https://i.etsystatic.com/11811092/r/il/d7cec9/1542490195/il_794xN.1542490195_p0k8.jpg",
+      "year": "1996",
+      "publisher": "Nintendo",
+      "consoleId": 17,
+      "owned": true,
+      "statusId": 3,
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "title": "Pokemon Red",
+      "boxart": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9be30e5-5d79-4c7e-b734-3ce0a28bb294/d9tkrbj-4a89683f-65db-4e8c-ab91-0c3aaf63560f.png/v1/fill/w_900,h_900,q_80,strp/pokemon_red_version__game_boy__hq_box_art_by_jadelune_d9tkrbj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05MDAiLCJwYXRoIjoiXC9mXC9jOWJlMzBlNS01ZDc5LTRjN2UtYjczNC0zY2UwYTI4YmIyOTRcL2Q5dGtyYmotNGE4OTY4M2YtNjVkYi00ZThjLWFiOTEtMGMzYWFmNjM1NjBmLnBuZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.HlaDOkiQkIwmceYoNYsn9-pBf4asEAzGvWyGGxv7vRU",
+      "year": "1996",
+      "publisher": "Game Freak",
+      "consoleId": 11,
+      "owned": false,
+      "statusId": 3,
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "title": "Mortal Kombat 4",
+      "boxart": "https://i.ebayimg.com/images/g/NYQAAOSwG-1WztGa/s-l640.jpg",
+      "year": "1997",
+      "publisher": "Midway",
+      "consoleId": 16,
+      "owned": true,
+      "statusId": 2,
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "title": "RayMan",
+      "boxart": "https://images.pushsquare.com/60ad8ced767c4/rayman-cover.cover_large.jpg",
+      "year": "1995",
+      "publisher": "Ubi Soft",
+      "consoleId": 16,
+      "owned": true,
+      "statusId": 2,
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "title": "Metroid",
+      "boxart": "https://images-na.ssl-images-amazon.com/images/I/518G1QPNYEL.jpg",
+      "year": "1986",
+      "publisher": "Nintendo",
+      "consoleId": 8,
+      "owned": true,
+      "statusId": 2,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "title": "The Legend of Zelda",
+      "boxart": "https://cdn11.bigcommerce.com/s-ymgqt/images/stencil/1280x1280/products/24232/15589/Game%20Nintendo%20NES-199-2__56738.1394711374.jpg?c=2&imbypass=on",
+      "year": "1986",
+      "publisher": "Nintendo",
+      "consoleId": 8,
+      "owned": true,
+      "statusId": 2,
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "title": "Sonic the Hedgehog 2",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/0/0c/Sonic_2_US_Cover.jpg",
+      "year": "1992",
+      "publisher": "Sega",
+      "consoleId": 10,
+      "owned": true,
+      "statusId": 3,
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "title": "Final Fantasy 7",
+      "boxart": "https://images-na.ssl-images-amazon.com/images/I/51tkmb93AiL._AC_UL600_SR600,600_.jpg",
+      "year": "1997",
+      "publisher": "Square Enix",
+      "consoleId": 16,
+      "owned": true,
+      "statusId": 3,
+      "userId": 1,
+      "id": 22
+    },
+    {
       "title": "Sonic Mania Plus",
       "boxart": "https://upload.wikimedia.org/wikipedia/en/d/d2/Sonic_Mania_%28artwork%29.jpg",
       "year": "2017",
@@ -119,18 +229,95 @@
       "owned": true,
       "statusId": 3,
       "userId": 1,
-      "id": 11
+      "id": 23
     },
     {
-      "title": "Super Mario 64",
-      "boxart": "https://i.etsystatic.com/11811092/r/il/d7cec9/1542490195/il_794xN.1542490195_p0k8.jpg",
-      "year": "1996",
-      "publisher": "Nintendo",
-      "consoleId": 17,
-      "owned": false,
+      "title": "Secret of Mana",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/b/b7/Secret_of_Mana_Box.jpg",
+      "year": "1993",
+      "publisher": "Square Enix",
+      "consoleId": 9,
+      "owned": true,
       "statusId": 1,
       "userId": 1,
-      "id": 12
+      "id": 24
+    },
+    {
+      "title": "SpiderMan",
+      "boxart": "https://media.gamestop.com/i/gamestop/10131620/Marvels-Spider-Man",
+      "year": "2018",
+      "publisher": " Insomniac Games",
+      "consoleId": 32,
+      "owned": true,
+      "statusId": 1,
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "title": "Super Metroid",
+      "boxart": "https://assets1.ignimgs.com/2019/09/06/super-metroid-us-snes-1567735440766.jpg",
+      "year": "1994",
+      "publisher": "Nintendo",
+      "consoleId": 9,
+      "owned": true,
+      "statusId": 1,
+      "userId": 1,
+      "id": 26
+    },
+    {
+      "title": "Streets of Rage 4",
+      "boxart": "https://s.pacn.ws/640/yy/streets-of-rage-4-629147.26.jpg?qa5h3r",
+      "year": "2020",
+      "publisher": "DotEmu, Yooreka Studio (Greater China)",
+      "consoleId": 32,
+      "owned": false,
+      "statusId": 4,
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "title": "Kingdom Hearts 3",
+      "boxart": "https://media.gamestop.com/i/gamestop/10150783/Kingdom-Hearts-III",
+      "year": "2019",
+      "publisher": "Square Enix",
+      "consoleId": 32,
+      "owned": false,
+      "statusId": 4,
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "title": "INinja",
+      "boxart": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/I-Ninja.jpg/220px-I-Ninja.jpg",
+      "year": "2003",
+      "publisher": "Namco",
+      "consoleId": 21,
+      "owned": false,
+      "statusId": 4,
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "title": "Dragon Ball Z: Kakarot",
+      "boxart": "https://media.gamestop.com/i/gamestop/10172927/DRAGON-BALL-Z-KAKAROT",
+      "year": "2020",
+      "publisher": "Bandai Namco",
+      "consoleId": 32,
+      "owned": false,
+      "statusId": 4,
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "title": "Split Second",
+      "boxart": "https://images-na.ssl-images-amazon.com/images/I/71ND4Bh4MtL._SX342_.jpg",
+      "year": "2010",
+      "publisher": "Black Rock Studio, Sumo Digital",
+      "consoleId": 24,
+      "owned": false,
+      "statusId": 4,
+      "userId": 1,
+      "id": 31
     }
   ],
   "users": [
@@ -167,6 +354,48 @@
       "timestamp": "6/2/2020 10:2",
       "text": "Can't Figure out what to do with the ball you can carry in the pit of Dispair",
       "gameId": 5
+    },
+    {
+      "id": 3,
+      "timestamp": "6/3/2020 8:27",
+      "text": "Control Mode: At the title screen, press Up, C, Down, C, Left, C, Right. While playing, you can pause the game and use A to restart, B for slow motion, and C for frame advance.",
+      "gameId": 1
+    },
+    {
+      "timestamp": "6/3/2020 8:30",
+      "text": "Debug Mode: Enable Control Mode. After pressing Start to begin a game, hold A until you see Sonic. If you see a bunch of hex numbers on the top of the screen, you're in Debug Mode.<p>  To start debugging, press B, then you can select any sprite in that level and put it on the screen. To select a different sprite, press A, and to place it on the screen, press C. Note that sprite selection is different from Zone to Zone. Also, instead of displaying the time elapsed, it displays the number of sprites currently on the screen. Control Mode functions work as well.<p>",
+      "gameId": 1,
+      "id": 4
+    },
+    {
+      "timestamp": "6/3/2020 8:31",
+      "text": "Just visited the psychic and she took away the ability to speak to humans and granted the ability to talk to animals and flowers...not sure where to go from this point.",
+      "gameId": 7,
+      "id": 5
+    },
+    {
+      "timestamp": "6/3/2020 8:32",
+      "text": "Left off in a jungle like area",
+      "gameId": 6,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "timestamp": "6/3/2020 8:35",
+      "text": "Beat the game In 5 minutes Start a new game and head to Hyrule Castle to your sword, then follow the path to go in.\n* Once inside the first main room, climb the center steps and walk to the ledge just to the left. Hop off the ledge and press ‘Select’ mid-air, then choose to save and quit the game. \n*Reload your save and make your way back into the castle, but make sure you don’t touch any of the guards along the way. If you do, you’ll need to repeat the last step. \n*Go up the stairs again, but this time exit through the door to the left.\n* Wait for the blue guard to turn around (or slash him once to get his attention), then press left on the D-pad to continuously run up against the left wall just as the guard hits you. \n*At this point, Link should disappear, now under and inside of the wall. *\n*Walk straight up until the screen changes, then go straight up one more screen and stop. \n*Walk to the right using Link’s hat peeking through the wall as a guide, then stop when it disappears into the right wall. \n*Make sure you don’t go another screen over, and don’t step out of the wall.\n* Now just hold up on the D-pad and you’ll eventually walk past Ganon and into the final cutscene of the game!",
+      "gameId": 2
+    },
+    {
+      "timestamp": "6/3/2020 8:40",
+      "text": "In the \"Special Zone\", wait about 5 minutes and listen to the music. It should start playing variations of the original Mario Bros. song!",
+      "gameId": 3,
+      "id": 8
+    },
+    {
+      "timestamp": "6/3/2020 8:44",
+      "text": "Warning! Catch missingno in the red version may delete your old game and prevent you from saving any other games.<p>\n\nTo get MissingNo (a glitch) go to Cinnabar Island and go into the Pokémon Research Labratory and trade with anyone in the first room. Then leave the Lab and go to the EAST of Cinnabar Island and surf up and down on the part where the land meets the water. Eventually the battle screen will come up and the screen goes black for about 5 seconds.<p>\n\nOnce you find him I suggest you use a Level 30 to 40 Pokemon. This is because Missing No., even at Lv. 80, has a VERY low defense rating. So get him down pretty low. Even at low he is still extremely difficult to catch. So next get a Pokemon that knows a sleep move and put him to sleep. Follow this up with a couple Ultra Balls and you should have him.<p>\n\nNOTE: Catching MissingNo. may cause minor glitches. Also note that if he evolves (i.e., by receiving a Rare Candy) he will turn into a Khangiskahn.",
+      "gameId": 16,
+      "id": 9
     }
   ],
   "consoles": [
@@ -339,19 +568,24 @@
   ],
   "messages": [
     {
-      "id": 1,
-      "message": "Welcome ",
-      "time": "10:33:55 AM"
+      "message": "Anybody Playing RayMan 2?",
+      "time": "7:46:49 PM",
+      "id": 1
     },
     {
-      "message": "Let's Make a new Message",
-      "time": "8:54:59 AM",
-      "id": 2
+      "id": 3,
+      "message": "Yeah man I am ",
+      "time": "8:32:57 PM"
     },
     {
-      "message": "message",
-      "time": "10:46:32 AM",
+      "message": "What do you need to know?",
+      "time": "8:32:44 AM",
       "id": 4
+    },
+    {
+      "message": "message test",
+      "time": "9:56:29 AM",
+      "id": 5
     }
   ]
 }

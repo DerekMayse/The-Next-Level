@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import NoteManager from "../../modules/NoteManager"
 import { Form, Button } from 'react-bootstrap'
 import NavBar from "../nowplaying/NavBar"
-
+import "./GameDetails.css";
 
 class EditNotesForm extends Component {
     
@@ -55,13 +55,14 @@ class EditNotesForm extends Component {
     render() {
             return (
 <>
+<div className="editNoteSection">
 <NavBar />
-<h1>Edit Note</h1>
+<h1 className="editNoteHead">Edit Note</h1>
 <Form>
   <Form.Group controlId="formBasicEmail">
     
     
-    <Form.Control type="text"  onChange={this.handleFieldChange}
+    <Form.Control type="text" rows="5"  as="textarea"  onChange={this.handleFieldChange}
                 value={this.state.text}
                 id="text"/>
   </Form.Group>
@@ -74,6 +75,7 @@ class EditNotesForm extends Component {
     Save
   </Button>
   </Form>
+  </div>
   </>
 
         

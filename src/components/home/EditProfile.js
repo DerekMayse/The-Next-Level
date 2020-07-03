@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProfileManager from "../../modules/ProfileManager"
 import { Form, Button } from "react-bootstrap";
-
+import "./Home.css";
 class EditProfile extends Component {
   //setting user information as an empty string and loading status to state
   state = {
@@ -62,7 +62,8 @@ class EditProfile extends Component {
   render() {
     return (
       <>
-        <h1>EditProfile</h1>
+      <div className="editProfile">
+        <h1 className="editProfileHeading">EditProfile</h1>
         <Form>
           
         <Form.Group >
@@ -152,7 +153,7 @@ class EditProfile extends Component {
           </Form.Group>
 
           <Button
-            variant="outline-dark"
+            variant="danger"
             type="button"
             disabled={this.state.loadingStatus}
             onClick={this.updateExistingUser}>
@@ -160,6 +161,7 @@ class EditProfile extends Component {
           </Button>
 
         </Form>
+        </div>
       </>
   
   );

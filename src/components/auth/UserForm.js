@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import UserRegistation from "../../modules/UserRegistration";
 import { Form, Button } from "react-bootstrap";
+import "./Login.css"
 
 class UserForm extends Component {
   //setting user information as an empty string and loading status to state
@@ -79,7 +80,8 @@ class UserForm extends Component {
   render() {
     return (
       <>
-        <h1>Account Registration</h1>
+         <div className="reg">
+        <h1 className="regHeading">Account Registration</h1>
         <Form>
 
           <Form.Group >
@@ -164,6 +166,7 @@ class UserForm extends Component {
           </Button>
 
         </Form>
+        </div>
       </>
     );
   }

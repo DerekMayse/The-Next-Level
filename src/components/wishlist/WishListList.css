@@ -1,3 +1,9 @@
 .wishList{
     text-align: center;
 }
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

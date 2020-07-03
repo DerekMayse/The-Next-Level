@@ -12,3 +12,31 @@
 display: flex;
 flex-direction: column;
 }
+
+.game{
+  background-color: rgba(141, 138, 138, 0.87);
+  }
+  .gameHead{
+      text-align: center;
+  }
+
+  .editGame{
+    background-color: rgba(141, 138, 138, 0.87);
+    }
+    .editHead{
+        text-align: center;
+    }
+
+    .addNote{
+      background-color: rgba(141, 138, 138, 0.87);
+      }
+      .noteHead{
+          text-align: center;
+      }
+
+      .editNoteSection{
+        background-color: rgba(141, 138, 138, 0.87);
+        }
+        .editNoteHead{
+            text-align: center;
+        }

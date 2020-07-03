@@ -143,7 +143,7 @@ class Home extends Component {
 
               <div className="nowPlaying">
                 <h2 className="currentTitle">Currently Playing</h2>
-
+                
                 <div className="nowPLayingCard">
                   {this.state.nowPlaying.map((game) => (
                     <NowPlayingGameCard key={game.id} game={game} />

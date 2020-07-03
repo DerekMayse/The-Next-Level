@@ -5,7 +5,7 @@ import { Form, Button } from "react-bootstrap";
 import NavBar from "../nowplaying/NavBar";
 import ConsoleManager from "../../modules/ConsoleManager";
 import StatusManager from "../../modules/StatusManager";
-
+import "./GameDetails.css";
 class NewGameForm extends Component {
   state = {
     title: "",
@@ -83,8 +83,10 @@ class NewGameForm extends Component {
   render() {
     return (
       <>
+        <div className="game">
         <NavBar />
-        <h1>Add A New Game </h1>
+    
+        <h1 className="gameHead">Add A New Game </h1>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Control
@@ -129,7 +131,6 @@ class NewGameForm extends Component {
               onClick={this.handleClick}
               label="Owned?"
             />
-            
           </Form.Group>
           <Form.Control as="select" onChange={this.handleFieldChange} id="statusId">
             {this.state.statuses.map((status) => (
@@ -150,6 +151,7 @@ class NewGameForm extends Component {
             Save
           </Button>
         </Form>
+        </div>
       </>
     );
   }

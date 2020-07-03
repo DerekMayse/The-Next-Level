@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button, Card, CardDeck,  } from "react-bootstrap";
+import { Button, Card, CardDeck, CardColumns,  } from "react-bootstrap";
 // import GameManager from "../../modules/GameManager"
 
 

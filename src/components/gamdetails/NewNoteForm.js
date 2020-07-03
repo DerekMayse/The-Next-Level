@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NoteManager from "../../modules/NoteManager";
 import { Form, Button } from 'react-bootstrap'
 import NavBar from "../nowplaying/NavBar"
+import "./GameDetails.css";
 
 // change route to note/new/gameId
 //get all consoles  map through op
@@ -46,13 +47,14 @@ class NewNoteForm extends Component {
 
 
 <>
+<div className="addNote">
 <NavBar />
-<h1>Add Note</h1>
+<h1 className="noteHead" >Add Note</h1>
 <Form>
   <Form.Group controlId="formBasicEmail">
     
     
-    <Form.Control type="text"  onChange={this.handleFieldChange}
+    <Form.Control type="textarea" rows="5"  as="textarea" onChange={this.handleFieldChange}
                 value={this.state.text}
                 id="text"/>
   </Form.Group>
@@ -67,6 +69,7 @@ class NewNoteForm extends Component {
     Save
   </Button>
   </Form>
+  </div>
   </>
 
 

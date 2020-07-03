@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 import NavBar from "../nowplaying/NavBar";
 import ConsoleManager from "../../modules/ConsoleManager";
 import StatusManager from "../../modules/StatusManager";
-
+import "./GameDetails.css";
 class EditGameForm extends Component {
   state = {
     title: "",
@@ -46,7 +46,7 @@ class EditGameForm extends Component {
     };
 
     GameManager.update(editedGame).then(() =>
-      this.props.history.push(`/games/${this.state.gameId}`)
+      this.props.history.push(`/games/nowplaying`)
     );
   };
 
@@ -57,9 +57,9 @@ class EditGameForm extends Component {
         boxart: game.boxart,
         year: game.year,
         publisher: game.publisher,
-        consoleId: parseInt(this.state.consoleId),
+        consoleId: parseInt(game.consoleId),
         owned: game.owned,
-        statusId: parseInt(this.state.statusId),
+        statusId: parseInt(game.statusId),
         userId: parseInt(localStorage.getItem("userId")),
         loadingStatus: false,
       });
@@ -86,8 +86,9 @@ class EditGameForm extends Component {
   render() {
     return (
       <>
+      <div className="editGame">
         <NavBar />
-        <h1>Edit Game</h1>
+        <h1 className="editHead">Edit Game</h1>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Control
@@ -136,11 +137,12 @@ class EditGameForm extends Component {
               type="checkbox"
               value={this.state.owned}
               label="Owned?"
+             checked= { this.state.owned === true ? "checked" : "" }
               onClick={this.handleClick}
             />
           </Form.Group>
 
-          <Form.Control as="select" value={parseInt(this.state.statusId)}>
+          <Form.Control as="select" onChange={this.handleFieldChange} value={this.state.statusId}>
             {this.state.statuses.map((status) => (
               <option value={status.id}>{status.info}</option>
             ))}
@@ -155,6 +157,7 @@ class EditGameForm extends Component {
             Save
           </Button>
         </Form>
+        </div>
       </>
     );
   }
