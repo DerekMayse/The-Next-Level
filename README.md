@@ -1,8 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to The Next Level
+Your personal video game database
 
-## Available Scripts
+## To Install
 
-In the project directory, you can run:
+Visit https://github.com/DerekMayse/the-next-level and clone down a branch to your local directory then "checkout -b name" a new branch to test. Run the commands "npm install react", "npm install react-bootstrap bootstrap", and "npm install react-router-dom" to install the necessary node modules.
+
 
 ### `npm start`
 
